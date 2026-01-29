@@ -1,0 +1,163 @@
+
+import { User, Vehicle, UserRole, VehicleType, ListingCategory, VehicleStatus } from '../../types';
+
+interface Store {
+  users: User[];
+  vehicles: Vehicle[];
+}
+
+export const mockDb: Store = {
+  users: [
+    { 
+        id: 'demo-admin', 
+        name: 'Top Gear Admin', 
+        email: 'admin@topgearsmw.com', 
+        role: UserRole.ADMIN, 
+        isSubscriptionActive: true 
+    }
+  ],
+  vehicles: [
+    {
+      id: 'v-golf-2013',
+      title: 'Volkswagen Golf 2013',
+      brand: 'Volkswagen',
+      model: 'Golf 1.5 Match TSI DSG',
+      year: 2013,
+      description: 'We Are Proud To Present This Stunning VW Golf 1.5 Match TSI DSG In Pearl White. This Vehicle Comes Equipped With 16in Alloy Wheels - Adaptive Cruise Control, Automatic Post-Collision Braking System, Convenience Pack, Discover Navigation Touch-Screen, Parking Sensors - Front and Rear, Rain Sensor and Automatic Dimming Rear-View Mirror, Multi Function Steering Wheel and Many More Fabulous Features.',
+      price: 'MK 14,500,000',
+      location: 'Blantyre, Malawi',
+      mileage: '85,000 km',
+      transmission: 'Automatic',
+      fuelType: 'Petrol',
+      type: VehicleType.SEDAN,
+      category: ListingCategory.SALE,
+      status: VehicleStatus.AVAILABLE,
+      imageUrl: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=1200&auto=format&fit=crop',
+      images: ['https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=1200&auto=format&fit=crop'],
+      whatsapp: '265880000000',
+      phone: '265880000000',
+      isSponsored: true
+    },
+    {
+      id: 'v-rr-2022',
+      title: 'Range Rover Sport 2022',
+      brand: 'Land Rover',
+      model: 'Sport HSE Luxury',
+      year: 2022,
+      description: 'TopGears is delighted to present this stunning example of a Range Rover Sport. This vehicle is in lovely condition posting stunning Metallic White bodywork and a Full Leather Ebony interior. Sliding Panoramic Roof, 21" Alloys - 5 split spoke Style 5007, Apple/Android Carplay compatibility, Matrix LED headlights with signature DRL, Meridian(TM) Sound System, Heated Front and Rear Seats. Rigorous 165-point vehicle check done.',
+      price: 'MK 125,000,000',
+      location: 'Lilongwe, Malawi',
+      mileage: '12,000 km',
+      transmission: 'Automatic',
+      fuelType: 'Diesel',
+      type: VehicleType.LUXURY,
+      category: ListingCategory.SALE,
+      status: VehicleStatus.AVAILABLE,
+      imageUrl: 'https://images.unsplash.com/photo-1606148633261-7bf0070b439c?q=80&w=1200&auto=format&fit=crop',
+      images: ['https://images.unsplash.com/photo-1606148633261-7bf0070b439c?q=80&w=1200&auto=format&fit=crop'],
+      whatsapp: '265880000000',
+      phone: '265880000000',
+      isSponsored: true
+    },
+    {
+      id: 'v-cx5-2015',
+      title: 'Mazda CX-5 2015',
+      brand: 'Mazda',
+      model: 'CX-5 2.0 165ps Newground',
+      year: 2015,
+      description: 'TopGears are proud to present this stunning, Machine Red Metallic CX-5 2.0 165ps Newground Automatic with Premium Cloth Interior. 18" Diamond Cut Alloy Wheels, touchscreen infotainment, Blind Spot Monitoring, Radar Cruise Control, Front and Rear Parking Sensors, Dual Climate Control, Automatic LED Headlights, Rain Sensing Wipers.',
+      price: 'MK 18,800,000',
+      location: 'Mzuzu, Malawi',
+      mileage: '72,000 km',
+      transmission: 'Automatic',
+      fuelType: 'Petrol',
+      type: VehicleType.SUV,
+      category: ListingCategory.SALE,
+      status: VehicleStatus.AVAILABLE,
+      imageUrl: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1200&auto=format&fit=crop',
+      images: ['https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1200&auto=format&fit=crop'],
+      whatsapp: '265880000000',
+      phone: '265880000000'
+    },
+    {
+      id: 'v-axio-2012',
+      title: 'Toyota Corolla Axio 2012',
+      brand: 'Toyota',
+      model: 'Corolla Axio 1.5 Excel',
+      year: 2012,
+      description: 'The Toyota Corolla Axio 1.5 is a testament to Toyotas commitment to quality, reliability, and innovation. contemporary sophistication with a sleek and aerodynamic profile. Spacious and comfortable interior designed with both driver and passengers in mind. Responsive 1.5-liter engine, delivering smooth performance for urban or highway cruising.',
+      price: 'MK 9,200,000',
+      location: 'Zomba, Malawi',
+      mileage: '94,000 km',
+      transmission: 'Automatic',
+      fuelType: 'Petrol',
+      type: VehicleType.SEDAN,
+      category: ListingCategory.SALE,
+      status: VehicleStatus.AVAILABLE,
+      imageUrl: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop',
+      images: ['https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop'],
+      whatsapp: '265880000000',
+      phone: '265880000000'
+    },
+    {
+      id: 'v-vanguard-2013',
+      title: 'Toyota Vanguard 2013',
+      brand: 'Toyota',
+      model: 'Vanguard 2.2 Auto Executive',
+      year: 2013,
+      description: 'TopGear is proud to Import the Executive Spec/Sporty Vanguard 2.2 Auto, Black Metallic, 7 Seater, Genuine 65,000km with comfort combination seating, climate control, cruise/MFSW, reverse camera, spoked alloys, fogs, privacy glass, roof rails. Latest production with Low Mileage and amazing specification.',
+      price: 'MK 16,500,000',
+      location: 'Blantyre, Malawi',
+      mileage: '65,000 km',
+      transmission: 'Automatic',
+      fuelType: 'Petrol',
+      type: VehicleType.SUV,
+      category: ListingCategory.SALE,
+      status: VehicleStatus.AVAILABLE,
+      imageUrl: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1200&auto=format&fit=crop',
+      images: ['https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1200&auto=format&fit=crop'],
+      whatsapp: '265880000000',
+      phone: '265880000000'
+    },
+    {
+      id: 'v-vanguard-2010',
+      title: 'Toyota Vanguard 2010',
+      brand: 'Toyota',
+      model: 'Vanguard 2.2 Sport',
+      year: 2010,
+      description: 'TopGear is proud to Import the Executive Spec/Sporty Vanguard 2.2 Auto, White Metallic, 7 Seater, Genuine mileage packed with comfort Leather combination seating, climate control, reverse camera, spoked alloys, fogs, privacy glass. High specification and made to be a work horse with high reliability.',
+      price: 'MK 13,000,000',
+      location: 'Lilongwe, Malawi',
+      mileage: '110,000 km',
+      transmission: 'Automatic',
+      fuelType: 'Petrol',
+      type: VehicleType.SUV,
+      category: ListingCategory.SALE,
+      status: VehicleStatus.AVAILABLE,
+      imageUrl: 'https://images.unsplash.com/photo-1517524008436-bbdb5395303f?q=80&w=1200&auto=format&fit=crop',
+      images: ['https://images.unsplash.com/photo-1517524008436-bbdb5395303f?q=80&w=1200&auto=format&fit=crop'],
+      whatsapp: '265880000000',
+      phone: '265880000000'
+    },
+    {
+      id: 'v-ractis-2013',
+      title: 'Toyota Ractis 2013',
+      brand: 'Toyota',
+      model: 'Ractis Individual Mint',
+      year: 2013,
+      description: 'Beautiful Toyota Ractis in the individual Mint Green Paint, which has only covered 60,000 miles. The car is like New, is scratch free and has a touch screen entertainment system. Boasts Toyota reliability and build quality. Scratch free condition.',
+      price: 'MK 6,800,000',
+      location: 'Mangochi, Malawi',
+      mileage: '60,000 miles',
+      transmission: 'Automatic',
+      fuelType: 'Petrol',
+      type: VehicleType.VAN,
+      category: ListingCategory.SALE,
+      status: VehicleStatus.AVAILABLE,
+      imageUrl: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop',
+      images: ['https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop'],
+      whatsapp: '265880000000',
+      phone: '265880000000'
+    }
+  ]
+};

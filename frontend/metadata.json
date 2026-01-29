@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Top Gear Motors",
+  "description": "The premier vehicle marketplace in Malawi. Browse and sell cars, trucks, and SUVs with Top Gear Motors.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

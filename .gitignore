@@ -1,0 +1,21 @@
+# Roots
+node_modules/
+dist/
+dist-ssr/
+*.log
+
+# Frontend-specific
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Backend-specific
+backend/node_modules/
+
+# OS/IDEs
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.sln
+*.sw?
